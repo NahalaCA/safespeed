@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>location of emergencies</title>
+</head>
+<body><center><h1>Location of Emergencies</h1>
+	{%if data['up'] %}
+	<form method="post">
+	<table>
+		<tr>
+			<th>Emergencies</th>
+			<td><input type="text" name="emergencies"required="" value="{{data['up'][0]['emergency']}}"></td>
+		</tr>
+
+		<tr>
+				    <th>Latitude</th>
+        <td><input type="text" name="latitude" required="" value="{{data['up'][0]['latitude']}}" class="form-control" id="lat">
+        <a class="btn btn-success" onclick="myFunction();"><b>View Map</b></a>
+        </td>
+		</tr>
+		
+		<tr>
+			<th>Longitude</th>
+                        <td ><br><input type="text" name="longitude" required="" value="{{data['up'][0]['longitude']}}" class="form-control" id="lon" ></td>
+		</tr>
+		<!-- <tr>
+			<th>Latitude</th>
+			<td><input type="text" name="latitude"></td>
+		</tr>
+		<tr>
+			<th>longitude</th>
+			<td><input type="text" name="longitude"></td>
+		</tr> -->
+		<tr>
+			<td align="center" colspan="2"><input type="submit" name="update"></td>
+		</tr>
+	</table>
+	<tr>
+					<div id="dvMap" style="width: 450px; height: 400px"></div>
+				</tr>
+	
+</form>
+
+	{%else%}
+<form method="post">
+	<table>
+		<tr>
+			<th>Emergencies</th>
+			<td><input type="text" name="emergencies" class="form-control" required=""></td>
+		</tr>
+
+		<tr>
+				    <th>Latitude</th>
+        <td><input type="text" name="latitude"  class="form-control"  required=" id="lat">
+        <a class="btn btn-success" onclick="myFunction();"><b>View Map</b></a>
+        </td>
+		</tr>
+		
+		<tr>
+			<th>Longitude</th>
+                        <td ><br><input type="text" name="longitude"  class="form-control" required="" id="lon" ></td>
+		</tr>
+		<!-- <tr>
+			<th>Latitude</th>
+			<td><input type="text" name="latitude"></td>
+		</tr>
+		<tr>
+			<th>longitude</th>
+			<td><input type="text" name="longitude"></td>
+		</tr> -->
+		<tr>
+			<td align="center" colspan="2"><input type="submit" name="submit"></td>
+		</tr>
+	</table>
+	<tr>
+					<div id="dvMap" style="width: 450px; height: 400px"></div>
+				</tr>
+	
+</form>
+{% endif%}
+
+<table border="1"> 
+	<tr>
+	<th>emergencies</th>
+	<th>latitude</th>
+	<th>longitude</th>
+	</tr>
+	{% for i in data['view'] %}
+	<tr>
+		<td>{{i['emergency']}}</td>
+		<td>{{i['latitude']}}</td>
+		<td>{{i['longitude ']}}</td>
+		<td><a class="btn btn-primary" href="http://www.google.com/maps?q={{i['latitude'] }},{{i['longitude']}}">Location </a></td>
+		<td><a href="?action=update&eid={{i['emergency_id']}}">update</a></td>
+		<td><a href="?action=delete&eid={{i['emergency_id']}}">delete</a></td>
+	</tr>
+	{% endfor %}
+
+
+</table>
+</center>
+
+
+
+
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD3MPnSnyWwNmpnVEFkaddVvy_GWtxSejs&sensor=false"></script>
+    <script type="text/javascript">
+        // window.onload = function () {
+          function myFunction(){
+            var mapOptions = {
+                center: new google.maps.LatLng(9.9763482, 76.286272),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var infoWindow = new google.maps.InfoWindow();
+            var latlngbounds = new google.maps.LatLngBounds();
+            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+            google.maps.event.addListener(map, 'click', function (e) {
+                alert("Latitude: " + e.latLng.lat() + "\r\nLongitude: " + e.latLng.lng());
+              document.getElementById('lat').value = e.latLng.lat();
+                document.getElementById('lon').value = e.latLng.lng();
+           
+
+            });
+        }
+    </script>
+
+
+</body>
+</html>

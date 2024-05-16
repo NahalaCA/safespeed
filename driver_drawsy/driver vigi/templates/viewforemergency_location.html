@@ -1,0 +1,19 @@
+<center><h1>Emergency Location</h1>
+<table class="table" style="width: 500px"> 
+	
+	<tr>
+	<th>emergencies</th>
+	<th>Location</th>
+	</tr>
+	{% for i in data['view'] %}
+	<tr>
+		<td>{{i['emergency']}}</td>
+		<td>{{i['latitude']}}</td>
+		<td><a class="btn btn-primary" href="http://www.google.com/maps?q={{i['latitude'] }},{{i['longitude']}}">Location </a></td>
+	</tr>
+	{% endfor %}
+
+
+</table>
+</center>
+

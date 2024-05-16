@@ -1,0 +1,31 @@
+<!-- res/drawable/button_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF4081" /> <!-- Change this to your desired background color -->
+            <corners android:radius="20dp" /> <!-- Change this to your desired corner radius -->
+        </shape>
+    </item>
+
+    <!-- Border -->
+    <item android:right="1dp" android:left="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" /> <!-- Transparent color for border -->
+            <stroke android:color="#FF5100" android:width="2dp" /> <!-- Change this to your desired border color and width -->
+        </shape>
+    </item>
+
+    <!-- Multi-color text effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#993366"
+            android:endColor="#F3F4F3"
+            android:type="linear"
+            android:angle="45" />
+        </shape>
+    </item>
+
+</layer-list>

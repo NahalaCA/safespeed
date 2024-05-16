@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/drowsi"
+            />
+        <TableRow
+            android:layout_width="382dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="106dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/camara"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/camara"
+                    app:srcCompat="@drawable/camara" />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="Camara"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/drivmode"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/drivmod"
+                    app:srcCompat="@drawable/drivmod" />
+
+                <TextView
+                    android:id="@+id/attendance"
+                    android:layout_width="133dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:text="Driver \n Mode"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/mes"
+                    app:srcCompat="@drawable/mes" />
+
+                <TextView
+                    android:id="@+id/mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Message"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        ############################################################
+
+
+
+
+        ############################################################
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/button2"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/disast"
+                    app:srcCompat="@drawable/disast" />
+
+                <TextView
+                    android:id="@+id/enquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Disaster"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/speedlimit"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/speed"
+                    app:srcCompat="@drawable/speed" />
+
+                <TextView
+                    android:id="@+id/speedlimit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Set Speed"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/setalam"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/iconfor"
+                    app:srcCompat="@drawable/iconfor" />
+
+                <TextView
+                    android:id="@+id/setalam2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="View Details"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/feedback"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/complaint"
+                    app:srcCompat="@drawable/complaint" />
+
+                <TextView
+                    android:id="@+id/feedback1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="FeedBack"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/moredetails"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/disa"
+                    app:srcCompat="@drawable/disa" />
+
+                <TextView
+                    android:id="@+id/moredetailss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="More Details"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imglogout2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/logout"
+                    app:srcCompat="@drawable/logout" />
+
+                <TextView
+                    android:id="@+id/logout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="LOGOUT"
+                    android:textAlignment="center"
+                    android:textColor="#8C1D40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password" />
+
+
+    </LinearLayout>
+</LinearLayout>

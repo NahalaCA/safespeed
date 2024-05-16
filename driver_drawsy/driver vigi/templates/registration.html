@@ -1,0 +1,64 @@
+{% include 'public_header.html' %}
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div"container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <!-- <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2> -->
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class=" scrollto"></a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" ></a>
+          </div>
+        </div>
+        <div class="col-lg-8 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <!-- <img src="/static/assets/img/hero-img111.png" style="width: 25%;" class="img-fluid animated" alt=""> -->
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero --> 
+
+
+
+	<center>
+	<h1><b>REGISTRATION</b></h1>
+	<form method="post">
+		<table class="table table-striped" style="width: 1000px">
+			<tr>
+				<th>User Name</th>
+				<td><input type="text" name="uname" required="" class="form-control" required=""></td>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="password" name="password" class="form-control" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<td><input type="text" name="fname"class="form-control" required=""></td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td><input type="text" name="lname"class="form-control" required=""></td>
+			</tr>
+			<tr>
+				<th>Vehicle No</th>
+				<td><input type="text" name="vno"class="form-control" required=""></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" pattern="[0-9[{10}" maxlength="10" name="phone"class="form-control" pattern="[0-9]{10}" maxlength="10"></td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td><input type="text" name="mail"class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></td>
+			</tr>
+			<tr>
+			<td align="	center" colspan="2"><input type="submit" name="submit" value="Submit"></td>
+		</tr>
+		</table>
+	</form>
+</center>
+
+{% include 'footer.html' %}
